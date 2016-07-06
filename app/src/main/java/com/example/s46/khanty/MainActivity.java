@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void menu3(View v) {
-        Intent a = new Intent(MainActivity.this, Quiz.class);
+        Intent a = new Intent(MainActivity.this, Quiz1.class);
         startActivity(a);
     }
 }

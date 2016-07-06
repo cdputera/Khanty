@@ -45,13 +45,12 @@
             android:screenOrientation="landscape" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".Question" />
-        <activity android:name=".DbHelper" />
+
         <activity
-            android:name=".Quiz"
+            android:name=".Quiz1"
             android:label="@string/title_activity_quiz"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Result" />
-        <activity android:name=".Radio"></activity>
+
     </application>
 
 </manifest>
