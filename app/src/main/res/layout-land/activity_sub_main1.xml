@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1"
+
+    tools:context="com.example.s46.khanty.SubMainActivity1">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/blank"
+        android:src="@drawable/a"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/child1"
+        android:layout_centerVertical="true"
+        android:src="@drawable/a_1"
+        android:layout_toRightOf="@id/blank"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/child2"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/child1"
+        android:src="@drawable/a_2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/child3"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/child2"
+        android:src="@drawable/a_3"/>
+
+    <Space
+        android:id="@+id/blank"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/left"
+        android:onClick="l"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightButton"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right"
+        android:onClick="r"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coba Belajar"
+        android:id="@+id/Check"
+        android:onClick="check"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
