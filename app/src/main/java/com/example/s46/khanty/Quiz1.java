@@ -20,7 +20,7 @@ public class Quiz1 extends Activity {
     int currentQuestion = 0;
     int score = 0;
     TextView questionTextView;
-    List<QuestionAndAnswers> quiz = new ArrayList<QuestionAndAnswers>();
+    //List<QuestionAndAnswers> quiz = new ArrayList<QuestionAndAnswers>();
     ImageView pic1;
 
     @Override
@@ -96,14 +96,14 @@ public class Quiz1 extends Activity {
          */
         int length = question.length;
         int i;
-        for (i = 0; i < length; i++)
-        quiz.add(new QuestionAndAnswers(question[i], answer[i], distractorList.subList(i * 3, (i + 1) * 3), pic[i]));//store question
+        //for (i = 0; i < length; i++);
+        //quiz.add(new QuestionAndAnswers(question[i], answer[i], distractorList.subList(i * 3, (i + 1) * 3), pic[i]));//store question
 
-        Collections.shuffle(quiz);//random the question
-        fillInQuestion();//show the question
+        //Collections.shuffle(quiz);//random the question
+        //fillInQuestion();//show the question
     }
 
-        public void fillInQuestion() {
+        /*public void fillInQuestion() {
             QuestionAndAnswers qna = quiz.get(currentQuestion);
             questionTextView.setText(qna.question); //set text question
             pic1.setImageResource(qna.pic); //set pic question
@@ -134,6 +134,6 @@ public class Quiz1 extends Activity {
             fillInQuestion();
 
 
-        }
+        }*/
 
 }
