@@ -1,48 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".QuizActivity" >
-    <LinearLayout
+    android:layout_height="match_parent">
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/Question"
         android:layout_alignParentTop="true"
-        android:orientation="vertical" >
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Pertanyaan" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/Question"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myRadioGroup"
+
+        android:layout_alignRight="@+id/buttonAns"
+        android:layout_alignEnd="@+id/buttonAns"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/Question"
+        android:layout_alignStart="@+id/Question">
+
+        <RadioButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
-        <RadioGroup
-            android:id="@+id/radioGroup1"
-            android:layout_width="match_parent"
+            android:id="@+id/Ans1"
+            android:checked="false"
+            android:textColor="#00000000"
+            android:layout_alignTop="@+id/spasi"
+            android:layout_toLeftOf="@+id/spasi"
+            android:layout_toStartOf="@+id/spasi" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.04" >
-            <RadioButton
-                android:id="@+id/radio0"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="RadioButton" />
-            <RadioButton
-                android:id="@+id/radio1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-            <RadioButton
-                android:id="@+id/radio2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="RadioButton" />
-        </RadioGroup>
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="match_parent"
+            android:id="@+id/Ans2"
+            android:checked="false"
+            android:textColor="#00000000"
+            android:layout_below="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="next" />
-    </LinearLayout>
+            android:id="@+id/Ans3"
+            android:checked="false"
+            android:textColor="#00000000"
+            android:layout_below="@+id/myRadioGroup"
+            android:layout_alignLeft="@+id/myRadioGroup"
+            android:layout_alignStart="@+id/myRadioGroup" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Ans4"
+            android:checked="false"
+            android:textColor="#00000000"
+            android:layout_below="@+id/Ans2"
+            android:layout_alignLeft="@+id/Ans2"
+            android:layout_alignStart="@+id/Ans2" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selanjutnya"
+        android:id="@+id/buttonAns"
+        android:onClick="checkAns"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/myRadioGroup"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>

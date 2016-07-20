@@ -39,8 +39,7 @@
         <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/Ans1"
+            android:id="@+id/Ans1"
         android:checked="false"
         android:layout_below="@+id/imageView"
         android:layout_toLeftOf="@+id/spasi"
@@ -49,8 +48,7 @@
         <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/Ans2"
+            android:id="@+id/Ans2"
         android:checked="false"
         android:layout_below="@+id/Ans1"
         android:layout_toLeftOf="@+id/spasi"
@@ -59,8 +57,7 @@
         <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/Ans3"
+            android:id="@+id/Ans3"
         android:checked="false"
         android:layout_below="@+id/imageView"
         android:layout_toRightOf="@+id/spasi"
@@ -69,8 +66,7 @@
         <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/Ans4"
+            android:id="@+id/Ans4"
         android:checked="false"
         android:layout_below="@+id/Ans3"
         android:layout_toRightOf="@+id/spasi"
@@ -82,10 +78,23 @@
         android:layout_height="wrap_content"
         android:text="Selanjutnya"
         android:id="@+id/buttonAns"
-        android:onClick="checkAns"
+
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/myRadioGroup"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:id="@+id/button5"
+        android:onClick="checkAns"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonAns"
+        android:layout_toEndOf="@+id/buttonAns"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp" />
 
 
 </RelativeLayout>

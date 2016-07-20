@@ -1,6 +1,7 @@
 package com.example.s46.khanty;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -44,6 +45,7 @@ public class SubMainActivity1 extends AppCompatActivity {
     };
 
     ImageView pr, chl1, chl2, chl3, right, left;
+    MediaPlayer mp0, mp1, mp2, mp3;
     int letKey;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +58,6 @@ public class SubMainActivity1 extends AppCompatActivity {
         chl3 = (ImageView) findViewById(R.id.child3);
         right = (ImageView) findViewById(R.id.rightButton);
         left = (ImageView) findViewById(R.id.leftButton);
-
 
 
         Intent i = getIntent();
@@ -80,6 +81,10 @@ public class SubMainActivity1 extends AppCompatActivity {
             chl1.setImageResource(R.drawable.a_1);
             chl2.setImageResource(R.drawable.a_2);
             chl3.setImageResource(R.drawable.a_3);
+            mp0 = MediaPlayer.create(this, R.raw.a);
+            mp1 = MediaPlayer.create(this, R.raw.aa);
+            mp2 = MediaPlayer.create(this, R.raw.aaa);
+            mp3 = MediaPlayer.create(this, R.raw.aaaa);
             Log.w("TAG", "1");
             letKey=1;
             right.setImageDrawable(null);
@@ -89,6 +94,10 @@ public class SubMainActivity1 extends AppCompatActivity {
             chl1.setImageResource(R.drawable.b_1);
             chl2.setImageResource(R.drawable.b_2);
             chl3.setImageResource(R.drawable.b_3);
+            mp0 = MediaPlayer.create(this, R.raw.b);
+            mp1 = MediaPlayer.create(this, R.raw.bb);
+            mp2 = MediaPlayer.create(this, R.raw.bbb);
+            mp3 = MediaPlayer.create(this, R.raw.bbbb);
             Log.w("TAG", "2");
             letKey=2;
             right.setImageResource(R.drawable.right);
@@ -97,42 +106,70 @@ public class SubMainActivity1 extends AppCompatActivity {
             chl1.setImageResource(R.drawable.c_1);
             chl2.setImageResource(R.drawable.c_2);
             chl3.setImageResource(R.drawable.c_3);
+            mp0 = MediaPlayer.create(this, R.raw.c);
+            mp1 = MediaPlayer.create(this, R.raw.cc);
+            mp2 = MediaPlayer.create(this, R.raw.ccc);
+            mp3 = MediaPlayer.create(this, R.raw.cccc);
             letKey=3;
         } else if (key == 4) {
             pr.setImageResource(primage[3]);
             chl1.setImageResource(R.drawable.d_1);
             chl2.setImageResource(R.drawable.d_2);
             chl3.setImageResource(R.drawable.d_3);
+            mp0 = MediaPlayer.create(this, R.raw.d);
+            mp1 = MediaPlayer.create(this, R.raw.dd);
+            mp2 = MediaPlayer.create(this, R.raw.ddd);
+            mp3 = MediaPlayer.create(this, R.raw.dddd);
             letKey=4;
         } else if (key == 5) {
             pr.setImageResource(primage[4]);
             chl1.setImageResource(R.drawable.e_1);
             chl2.setImageResource(R.drawable.e_2);
             chl3.setImageResource(R.drawable.e_3);
+            mp0 = MediaPlayer.create(this, R.raw.e);
+            mp1 = MediaPlayer.create(this, R.raw.ee);
+            mp2 = MediaPlayer.create(this, R.raw.eee);
+            mp3 = MediaPlayer.create(this, R.raw.eeee);
             letKey=5;
         } else if (key == 6) {
             pr.setImageResource(primage[5]);
             chl1.setImageResource(R.drawable.f_1);
             chl2.setImageResource(R.drawable.f_2);
             chl3.setImageResource(R.drawable.f_3);
+            mp0 = MediaPlayer.create(this, R.raw.f);
+            mp1 = MediaPlayer.create(this, R.raw.ff);
+            mp2 = MediaPlayer.create(this, R.raw.fff);
+            mp3 = MediaPlayer.create(this, R.raw.ffff);
             letKey=6;
         } else if (key == 7) {
             pr.setImageResource(primage[6]);
             chl1.setImageResource(R.drawable.g_1);
             chl2.setImageResource(R.drawable.g_2);
             chl3.setImageResource(R.drawable.g_3);
+            mp0 = MediaPlayer.create(this, R.raw.g);
+            mp1 = MediaPlayer.create(this, R.raw.gg);
+            mp2 = MediaPlayer.create(this, R.raw.ggg);
+            mp3 = MediaPlayer.create(this, R.raw.gggg);
             letKey=7;
         } else if (key == 8) {
             pr.setImageResource(primage[7]);
             chl1.setImageResource(R.drawable.h_1);
             chl2.setImageResource(R.drawable.h_2);
             chl3.setImageResource(R.drawable.h_3);
+            mp0 = MediaPlayer.create(this, R.raw.h);
+            mp1 = MediaPlayer.create(this, R.raw.hh);
+            mp2 = MediaPlayer.create(this, R.raw.hhh);
+            mp3 = MediaPlayer.create(this, R.raw.hhhh);
             letKey=8;
         } else if (key == 9) {
             pr.setImageResource(primage[8]);
             chl1.setImageResource(R.drawable.i_1);
             chl2.setImageResource(R.drawable.i_2);
             chl3.setImageResource(R.drawable.i_3);
+            mp0 = MediaPlayer.create(this, R.raw.i);
+            mp1 = MediaPlayer.create(this, R.raw.ii);
+            mp2 = MediaPlayer.create(this, R.raw.iii);
+            mp3 = MediaPlayer.create(this, R.raw.iiii);
             letKey=9;
         } else if (key == 10) {
             pr.setImageResource(primage[9]);
@@ -287,6 +324,7 @@ public class SubMainActivity1 extends AppCompatActivity {
             chl1.setImageResource(R.drawable.a_1);
             chl2.setImageResource(R.drawable.a_2);
             chl3.setImageResource(R.drawable.a_3);
+            mp0 = MediaPlayer.create(this, R.raw.a);
             Log.w("TAG", "1");
             right.setImageDrawable(null);
         } else if (letKey == 2) {
@@ -294,6 +332,7 @@ public class SubMainActivity1 extends AppCompatActivity {
             chl1.setImageResource(R.drawable.b_1);
             chl2.setImageResource(R.drawable.b_2);
             chl3.setImageResource(R.drawable.b_3);
+            mp0 = MediaPlayer.create(this, R.raw.b);
             Log.w("TAG", "2");
             right.setImageResource(R.drawable.right);
         } else if (letKey == 3) {
@@ -301,11 +340,13 @@ public class SubMainActivity1 extends AppCompatActivity {
             chl1.setImageResource(R.drawable.c_1);
             chl2.setImageResource(R.drawable.c_2);
             chl3.setImageResource(R.drawable.c_3);
+            mp0 = MediaPlayer.create(this, R.raw.c);
         } else if (letKey == 4) {
             pr.setImageResource(primage[3]);
             chl1.setImageResource(R.drawable.d_1);
             chl2.setImageResource(R.drawable.d_2);
             chl3.setImageResource(R.drawable.d_3);
+            mp0 = MediaPlayer.create(this, R.raw.d);
         } else if (letKey == 5) {
             pr.setImageResource(primage[4]);
             chl1.setImageResource(R.drawable.e_1);
@@ -547,4 +588,20 @@ public class SubMainActivity1 extends AppCompatActivity {
         }
         startActivity(j);
     }
+
+    public void s0 (View v){
+        mp0.start();
+    }
+
+    public void s1 (View v){
+        mp1.start();
+    }
+    public void s2 (View v){
+        mp2.start();
+    }
+    public void s3 (View v){
+        mp3.start();
+    }
+
+
     }

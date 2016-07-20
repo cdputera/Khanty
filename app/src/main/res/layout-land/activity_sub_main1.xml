@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/parent"
+        android:onClick="s0"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/blank"
         android:src="@drawable/a"/>
@@ -24,12 +25,14 @@
         android:id="@+id/child1"
         android:layout_centerVertical="true"
         android:src="@drawable/a_1"
+        android:onClick="s1"
         android:layout_toRightOf="@id/blank"
         />
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/child2"
+        android:onClick="s2"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/child1"
         android:src="@drawable/a_2" />
@@ -38,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/child3"
+        android:onClick="s3"
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/child2"
         android:src="@drawable/a_3"/>
