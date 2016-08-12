@@ -55,101 +55,101 @@ public class CanvasActivity extends Activity {
             if (predictions.size() > 0 && predictions.get(0).score > 1.0) {
                 Double score = predictions.get(0).score;
                 String name = predictions.get(0).name;
-                Log.w("TAG", name);
-                Log.w("TAG", String.valueOf(score));
+                Log.w("Nama", name);
+                Log.w("Score", String.valueOf(score));
 
                 //Toast.makeText(CanvasActivity.this, action,
                             //Toast.LENGTH_SHORT).show();
                 if (name.equals("a") && key ==1){
                     Toast.makeText(CanvasActivity.this, "alif",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("b") && key ==2){
                     Toast.makeText(CanvasActivity.this, "ba",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("t") && key ==3){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("tsa") && key ==4){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("ja") && key ==5){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("kha") && key ==6){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("kho") && key ==7){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("dal") && key ==8){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("dzal") && key ==9){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("ra") && key ==10){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("za") && key ==11){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("sin") && key ==12){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("syin") && key ==13){
                     Toast.makeText(CanvasActivity.this, "haloo",
                             Toast.LENGTH_SHORT).show();
-                    Log.w("TAG", name);
-                    Log.w("TAG", String.valueOf(score));
-                    Log.w("TAG", String.valueOf(key));
+                    Log.w("Nama", name);
+                    Log.w("Score", String.valueOf(score));
+                    Log.w("Key", String.valueOf(key));
                 }
                 else if (name.equals("shod") && key ==14){
                     Toast.makeText(CanvasActivity.this, "haloo",

@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="@drawable/background_1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
 
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gOverlay"
+        android:fadeOffset="1000"
+        android:fadeEnabled="false"
+        android:gestureColor="#FFFFFF"
+        android:gestureStrokeType="single"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Under Development"
-        android:id="@+id/textView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+
+
+
 </RelativeLayout>

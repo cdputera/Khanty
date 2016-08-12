@@ -1,103 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@drawable/background_1"
+    android:id="@+id/front"
     tools:context="com.example.s46.khanty.MainActivity1">
 
     <ImageView
         android:id="@+id/tumb1"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/syma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h1"
+        android:onClick="a"
         android:layout_above="@+id/tumb11"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="20dp"
-        android:onClick="a" />
+        android:layout_alignRight="@+id/tumb11" />
 
     <ImageView
         android:id="@+id/tumb2"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h2"
         android:layout_toLeftOf="@+id/tumb1"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="b" />
 
     <ImageView
         android:id="@+id/tumb3"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h3"
         android:layout_toLeftOf="@+id/tumb2"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="c" />
 
     <ImageView
         android:id="@+id/tumb4"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h4"
         android:layout_toLeftOf="@+id/tumb3"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="d" />
 
     <ImageView
         android:id="@+id/tumb5"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/syme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h5"
         android:layout_toLeftOf="@+id/tumb4"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="e" />
 
     <ImageView
         android:id="@+id/tumb6"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h6"
         android:layout_toLeftOf="@+id/tumb5"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="f" />
 
     <ImageView
         android:id="@+id/tumb7"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h7"
         android:layout_toLeftOf="@+id/tumb6"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="g" />
 
     <ImageView
         android:id="@+id/tumb8"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h8"
         android:layout_toLeftOf="@+id/tumb7"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="h" />
 
     <ImageView
         android:id="@+id/tumb9"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h9"
         android:layout_toLeftOf="@+id/tumb8"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="i" />
 
     <ImageView
         android:id="@+id/tumb10"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h10"
         android:layout_toLeftOf="@+id/tumb9"
         android:layout_alignTop="@+id/tumb1"
         android:onClick="j" />
@@ -106,188 +101,198 @@
 
     <ImageView
         android:id="@+id/tumb11"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symk"
-        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h11"
+        android:layout_marginRight="35dp"
+        android:onClick="k"
         android:layout_centerVertical="true"
-        android:onClick="k" />
+        android:layout_alignParentRight="true"/>
 
     <ImageView
         android:id="@+id/tumb12"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/syml"
-        android:layout_toLeftOf="@+id/tumb11"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="l" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h12"
+        android:onClick="l"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb11"/>
 
     <ImageView
         android:id="@+id/tumb13"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symm"
-        android:layout_toLeftOf="@+id/tumb12"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="m" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h13"
+        android:onClick="m"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb12"/>
 
     <ImageView
         android:id="@+id/tumb14"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symn"
-        android:layout_toLeftOf="@+id/tumb13"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="n" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h14"
+        android:onClick="n"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb13"/>
 
     <ImageView
         android:id="@+id/tumb15"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symo"
-        android:layout_toLeftOf="@+id/tumb14"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="o" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h15"
+        android:onClick="o"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb14"/>
 
     <ImageView
         android:id="@+id/tumb16"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symp"
-        android:layout_toLeftOf="@+id/tumb15"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="p" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h16"
+        android:onClick="p"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb15"/>
 
     <ImageView
         android:id="@+id/tumb17"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symq"
-        android:layout_toLeftOf="@+id/tumb16"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="q" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h17"
+        android:onClick="q"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb16"/>
 
     <ImageView
         android:id="@+id/tumb18"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symr"
-        android:layout_toLeftOf="@+id/tumb17"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="r" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h18"
+        android:onClick="r"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb17"/>
 
     <ImageView
         android:id="@+id/tumb19"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/syms"
-        android:layout_toLeftOf="@+id/tumb18"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="s" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h19"
+        android:onClick="s"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb18"/>
 
     <ImageView
         android:id="@+id/tumb20"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symt"
-        android:layout_toLeftOf="@+id/tumb19"
-        android:layout_alignTop="@+id/tumb11"
-        android:onClick="t" />
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h20"
+        android:onClick="t"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tumb19"/>
     //nextline
 
     <ImageView
         android:id="@+id/tumb21"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h21"
+        android:onClick="u"
         android:layout_below="@+id/tumb11"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:onClick="u" />
+        android:layout_alignLeft="@+id/tumb11"
+        android:layout_alignStart="@+id/tumb11" />
 
     <ImageView
         android:id="@+id/tumb22"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symv"
-        android:layout_toLeftOf="@+id/tumb21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h22"
+        android:onClick="v"
         android:layout_alignTop="@+id/tumb21"
-        android:onClick="v" />
+        android:layout_toLeftOf="@+id/tumb21"/>
 
     <ImageView
         android:id="@+id/tumb23"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symw"
-        android:layout_toLeftOf="@+id/tumb22"
-        android:layout_alignTop="@+id/tumb21"
-        android:onClick="w" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h23"
+        android:onClick="w"
+        android:layout_alignTop="@+id/tumb22"
+        android:layout_toLeftOf="@+id/tumb22"/>
 
     <ImageView
         android:id="@+id/tumb24"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symx"
-        android:layout_toLeftOf="@+id/tumb23"
-        android:layout_alignTop="@+id/tumb21"
-        android:onClick="x" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h24"
+        android:onClick="x"
+        android:layout_alignTop="@+id/tumb23"
+        android:layout_toLeftOf="@+id/tumb23"/>
 
     <ImageView
         android:id="@+id/tumb25"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symy"
-        android:layout_toLeftOf="@+id/tumb24"
-        android:layout_alignTop="@+id/tumb21"
-        android:onClick="y" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h25"
+        android:onClick="y"
+        android:layout_alignTop="@+id/tumb24"
+        android:layout_toLeftOf="@+id/tumb24"/>
 
     <ImageView
         android:id="@+id/tumb26"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symz"
-        android:layout_toLeftOf="@+id/tumb25"
-        android:layout_alignTop="@+id/tumb21"
-        android:onClick="z" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h26"
+        android:onClick="z"
+        android:layout_alignTop="@+id/tumb25"
+        android:layout_toLeftOf="@+id/tumb25"/>
 
     <ImageView
         android:id="@+id/tumb27"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symza"
-        android:layout_toLeftOf="@+id/tumb26"
-        android:layout_alignTop="@+id/tumb21"
-        android:onClick="za" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h27"
+        android:onClick="za"
+        android:layout_alignTop="@+id/tumb26"
+        android:layout_toLeftOf="@+id/tumb26"/>
 
     <ImageView
         android:id="@+id/tumb28"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symzb"
-        android:layout_toLeftOf="@+id/tumb27"
-        android:layout_alignTop="@+id/tumb21"
-        android:nestedScrollingEnabled="false"
-        android:onClick="zb" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h28"
+        android:onClick="zb"
+        android:layout_alignTop="@+id/tumb27"
+        android:layout_toLeftOf="@+id/tumb27"/>
 
     <ImageView
         android:id="@+id/tumb29"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symzc"
-        android:layout_toLeftOf="@+id/tumb28"
-        android:layout_alignTop="@+id/tumb21"
-        android:nestedScrollingEnabled="false"
-        android:onClick="zc" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h29"
+        android:onClick="zc"
+        android:layout_alignTop="@+id/tumb28"
+        android:layout_toLeftOf="@+id/tumb28"/>
 
     <ImageView
         android:id="@+id/tumb30"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:src="@drawable/symzd"
-        android:layout_toLeftOf="@+id/tumb29"
-        android:layout_alignTop="@+id/tumb21"
-        android:onClick="zd" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/h30"
+        android:onClick="zd"
+        android:layout_alignTop="@+id/tumb29"
+        android:layout_toLeftOf="@+id/tumb29"/>
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleLetter"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
